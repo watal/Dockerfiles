@@ -3,5 +3,5 @@ LABEL maintainer "Wataru MISHIMA <watal.i27e@gmail.com>"
 
 SHELL ["/bin/bash", "-l", "-c"]
 
+ENV GOBIN /usr/local/go/bin
 RUN go install github.com/nttcom/pola/cmd/...@latest
-ENTRYPOINT ["/root/go/bin/polad"]
